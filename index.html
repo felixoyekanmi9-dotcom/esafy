@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Esty-Luxuries Perfume | Premium Fragrances</title>
+
+<meta name="description" content="Esty-Luxuries Perfume offers premium luxury perfumes, fragrance oils, and long-lasting scents crafted for elegance and confidence.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f8f2ed;
+color:#2a140a;
+overflow-x:hidden;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:fixed;
+top:0;
+left:0;
+z-index:1000;
+background:rgba(255,255,255,0.95);
+backdrop-filter:blur(12px);
+box-shadow:0 2px 15px rgba(0,0,0,0.05);
+}
+
+.logo{
+font-family:'Playfair Display',serif;
+font-size:30px;
+font-weight:800;
+color:#2a140a;
+}
+
+.logo span{
+color:#c89b3c;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#2a140a;
+font-weight:500;
+transition:0.3s ease;
+}
+
+nav ul li a:hover{
+color:#c89b3c;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:120px 8% 80px;
+background:
+linear-gradient(rgba(255,248,244,0.88),rgba(255,248,244,0.92)),
+url('https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?q=80&w=1600&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+}
+
+.hero-container{
+max-width:1300px;
+width:100%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.tagline{
+color:#b88a2f;
+font-size:14px;
+letter-spacing:3px;
+text-transform:uppercase;
+margin-bottom:20px;
+font-weight:600;
+}
+
+.hero-text h1{
+font-family:'Playfair Display',serif;
+font-size:75px;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero-text h1 span{
+color:#c89b3c;
+}
+
+.script{
+font-family:'Great Vibes',cursive;
+font-size:42px;
+color:#8b5b3f;
+margin-bottom:25px;
+}
+
+.hero-text p{
+line-height:2;
+color:#5e4d46;
+font-size:17px;
+margin-bottom:35px;
+max-width:600px;
+}
+
+.hero-btns{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:15px 35px;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+transition:0.4s ease;
+display:inline-block;
+}
+
+.btn-primary{
+background:#2a140a;
+color:white;
+}
+
+.btn-primary:hover{
+background:#c89b3c;
+transform:translateY(-4px);
+}
+
+.btn-secondary{
+border:2px solid #2a140a;
+color:#2a140a;
+}
+
+.btn-secondary:hover{
+background:#2a140a;
+color:white;
+}
+
+.hero-image{
+position:relative;
+text-align:center;
+}
+
+.hero-image img{
+width:100%;
+max-width:520px;
+border-radius:25px;
+box-shadow:0 20px 50px rgba(0,0,0,0.18);
+}
+
+.badge{
+position:absolute;
+top:20px;
+right:10px;
+width:130px;
+height:130px;
+background:#1a0c06;
+border:4px solid #d6a74b;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+font-size:13px;
+font-weight:600;
+line-height:1.5;
+padding:10px;
+}
+
+/* ================= GENERAL SECTION ================= */
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-family:'Playfair Display',serif;
+font-size:50px;
+margin-bottom:15px;
+}
+
+.section-title p{
+max-width:700px;
+margin:auto;
+line-height:2;
+color:#666;
+}
+
+/* ================= FEATURES ================= */
+
+.features{
+background:white;
+}
+
+.features-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.feature-card{
+background:#fff7f2;
+padding:40px 25px;
+border-radius:25px;
+text-align:center;
+transition:0.4s ease;
+border:1px solid #f0ddd1;
+}
+
+.feature-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+
+.feature-icon{
+font-size:45px;
+margin-bottom:20px;
+}
+
+.feature-card h3{
+margin-bottom:15px;
+font-size:22px;
+}
+
+.feature-card p{
+color:#666;
+line-height:1.8;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+background:#fdf6f2;
+}
+
+.about-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about-image img{
+width:100%;
+border-radius:25px;
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+.about-text h2{
+font-family:'Playfair Display',serif;
+font-size:50px;
+margin-bottom:25px;
+}
+
+.about-text p{
+line-height:2;
+margin-bottom:20px;
+color:#5e4d46;
+}
+
+.quote{
+font-family:'Great Vibes',cursive;
+font-size:42px;
+color:#8b5b3f;
+margin-top:20px;
+}
+
+/* ================= PRODUCTS ================= */
+
+.products{
+background:white;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:35px;
+}
+
+.product-card{
+background:#fff7f2;
+border-radius:25px;
+overflow:hidden;
+transition:0.4s ease;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.product-card:hover{
+transform:translateY(-10px);
+}
+
+.product-card img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+.product-content{
+padding:25px;
+}
+
+.product-content h3{
+font-size:26px;
+margin-bottom:12px;
+}
+
+.product-content p{
+line-height:1.8;
+color:#666;
+}
+
+/* ================= BANNER ================= */
+
+.banner{
+background:#2a140a;
+color:white;
+text-align:center;
+padding:80px 8%;
+}
+
+.banner h2{
+font-family:'Playfair Display',serif;
+font-size:50px;
+margin-bottom:20px;
+}
+
+.banner p{
+max-width:850px;
+margin:auto;
+line-height:2;
+color:#ddd;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+background:#fdf6f2;
+}
+
+.contact-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.contact-info h2{
+font-family:'Playfair Display',serif;
+font-size:50px;
+margin-bottom:20px;
+}
+
+.contact-info p{
+line-height:2;
+margin-bottom:30px;
+color:#5e4d46;
+}
+
+.contact-list{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.contact-item{
+background:white;
+padding:20px;
+border-radius:18px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.contact-item strong{
+display:block;
+margin-bottom:8px;
+color:#c89b3c;
+}
+
+.qr-box{
+background:white;
+padding:40px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.qr-box img{
+width:220px;
+margin-bottom:20px;
+}
+
+.qr-box h3{
+margin-bottom:12px;
+font-size:24px;
+}
+
+.qr-box p{
+color:#666;
+line-height:1.8;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+background:#1b0d08;
+color:#ddd;
+text-align:center;
+padding:25px;
+font-size:14px;
+letter-spacing:1px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:950px){
+
+.hero-container,
+.about-container,
+.contact-container{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero-btns{
+justify-content:center;
+}
+
+.hero-text p{
+margin:auto auto 35px;
+}
+
+.hero-text h1{
+font-size:52px;
+}
+
+.section-title h2,
+.about-text h2,
+.contact-info h2,
+.banner h2{
+font-size:40px;
+}
+
+nav{
+padding:18px 5%;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero{
+padding-top:140px;
+}
+
+.hero-text h1{
+font-size:40px;
+}
+
+.script{
+font-size:30px;
+}
+
+.section-title h2,
+.about-text h2,
+.contact-info h2,
+.banner h2{
+font-size:32px;
+}
+
+.btn{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">
+ESTY-<span>LUXURIES</span>
+</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#shop">Collections</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-container">
+
+<div class="hero-text">
+
+<div class="tagline">
+Luxury In Every Drop
+</div>
+
+<h1>
+ESTY-<span>LUXURIES</span>
+</h1>
+
+<div class="script">
+Confidence in every spray.
+</div>
+
+<p>
+Welcome to Esty-Luxuries Perfume — your destination for authentic luxury perfumes, premium fragrance oils, and long-lasting scents crafted for elegance, confidence, and unforgettable moments.
+</p>
+
+<div class="hero-btns">
+
+<a href="#shop" class="btn btn-primary">
+Shop Collection
+</a>
+
+<a href="#contact" class="btn btn-secondary">
+Contact Us
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=1200&auto=format&fit=crop" alt="Luxury Perfume Bottle">
+
+<div class="badge">
+PREMIUM<br>
+QUALITY<br>
+LONG-LASTING<br>
+SCENTS
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="features">
+
+<div class="section-title">
+
+<h2>Why Choose Esty-Luxuries</h2>
+
+<p>
+Indulge in scents that leave a lasting impression because you deserve luxury.
+</p>
+
+</div>
+
+<div class="features-grid">
+
+<div class="feature-card">
+<div class="feature-icon">✨</div>
+<h3>Premium Quality</h3>
+<p>
+Authentic luxury perfumes made with premium fragrance ingredients.
+</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">🌸</div>
+<h3>Long-Lasting Scents</h3>
+<p>
+Fresh, captivating scents that stay beautiful throughout the day.
+</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">💎</div>
+<h3>Exquisite Perfume Oils</h3>
+<p>
+Luxury fragrance oils selected for elegance and sophistication.
+</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">🎁</div>
+<h3>Perfect For Every Occasion</h3>
+<p>
+Luxury fragrances suitable for weddings, gifts, parties, and everyday wear.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="about-container">
+
+<div class="about-image">
+
+<img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?q=80&w=1200&auto=format&fit=crop" alt="Luxury Fragrance">
+
+</div>
+
+<div class="about-text">
+
+<h2>Pure Elegance In Every Bottle</h2>
+
+<p>
+At Esty-Luxuries, every scent tells a story. We specialize in premium perfumes and fragrance variants designed to make you feel confident, classy, and unforgettable.
+</p>
+
+<p>
+Whether you love feminine luxury scents, bold masculine fragrances, or long-lasting perfume oils, our collections are carefully selected to match every mood and occasion.
+</p>
+
+<div class="quote">
+Nothing but the best ♥
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section class="products" id="shop">
+
+<div class="section-title">
+
+<h2>Our Luxury Collections</h2>
+
+<p>
+Explore our premium perfume collections and authentic luxury scents.
+</p>
+
+</div>
+
+<div class="product-grid">
+
+<!-- PRODUCT 1 -->
+
+<div class="product-card">
+
+<img src="images/WhatsApp Image 2026-05-24 at 7.46.32 AM (1).jpeg" alt="Liquid Brun Perfume">
+
+<div class="product-content">
+
+<h3>Liquid Brun</h3>
+
+<p>
+A rich luxury fragrance from French Avenue with warm deep notes, perfect for classy occasions and premium fragrance lovers.
+</p>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 2 -->
+
+<div class="product-card">
+
+<img src="images/WhatsApp Image 2026-05-24 at 7.46.32 AM (2).jpeg" alt="Aventos Blue For Him">
+
+<div class="product-content">
+
+<h3>Aventos Blue For Him</h3>
+
+<p>
+A bold masculine fragrance with refreshing long-lasting scent notes crafted for confident and stylish men.
+</p>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 3 -->
+
+<div class="product-card">
+
+<img src="images/WhatsApp Image 2026-05-24 at 7.46.32 AM.jpeg"Signature Luxury Perfume">
+
+<div class="product-content">
+
+<h3>Signature Scents</h3>
+
+<p>
+Authentic luxury fragrances carefully selected to leave timeless and unforgettable impressions.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BANNER -->
+
+<section class="banner">
+
+<h2>
+Indulge In Scents That Leave A Lasting Impression
+</h2>
+
+<p>
+Thank you for choosing ESTY-LUXURIES — where every scent tells a story. Authentic scents • Premium quality • Timeless luxury.
+</p>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="contact-container">
+
+<div class="contact-info">
+
+<h2>Connect With Us</h2>
+
+<p>
+We are always available to help you discover the perfect scent for every occasion.
+</p>
+
+<div class="contact-list">
+
+<div class="contact-item">
+<strong>WhatsApp</strong>
+09063997162
+</div>
+
+<div class="contact-item">
+<strong>TikTok</strong>
+@Esty_Luxuries5
+</div>
+
+<div class="contact-item">
+<strong>Instagram</strong>
+@Esty_Luxuries01
+</div>
+
+<div class="contact-item">
+<strong>Location</strong>
+Agbara, Ogun State
+</div>
+
+</div>
+
+</div>
+
+<div class="qr-box">
+
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://wa.me/2349063997162" alt="WhatsApp QR Code">
+
+<h3>Scan To Chat On WhatsApp</h3>
+
+<p>
+Scan the QR code to place your perfume orders directly on WhatsApp.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+AUTHENTIC SCENTS • PREMIUM QUALITY • TIMELESS LUXURY
+
+</footer>
+
+</body>
+</html>
